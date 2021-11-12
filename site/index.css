@@ -1,20 +1,19 @@
 
 .one ul {
-  
+  margin-left: auto;
+  margin-right: auto;
   width: fit-content;
   list-style: none;
   padding: 0.5em 0;
-  background: #170957;
 }
 .one a {
   padding: 1em;
-  background: rgba(129, 38, 185, 0.3);
   border-right: 1px solid #07000a;
   color: #323374d8;
 }
 .one a:hover {background: #2e7975;}
 .one li {
-  color: aliceblue;
+  color: rgb(28, 122, 204);
   font-size: larger;
   display: inline;
 }
