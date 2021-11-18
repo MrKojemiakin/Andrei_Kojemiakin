@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_Forms</title>
+</head>
+<body>
+    <table width="700px">
+    <tr>
+        <td><b>Простая форма поиска с вариантами:</b>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <input type="text" maxlength="10">
+                <input type="submit" value="искать">
+                <br>
+                <label><input type="checkbox" name="на сайте" id="chbox1">на сайте</label>
+                <label><input type="checkbox" name="в google" id="chbox2">в google</label>
+                <br><i>Длина запроса не более 10 символов</i>
+            </fieldset>
+        </form></td>
+        <td><b>Простая форма поиска с вариантами:</b>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <input required type="text" autofocus>*
+                <input type="submit" value="искать">
+                <br>
+                <label><input type="checkbox" name="на сайте" id="chbox1">на сайте</label>
+                <label><input type="checkbox" name="в google" id="chbox2">в google</label>
+                <br><i>*-обязательное поле<br>Автофокус в поле поиска</i>
+            </fieldset>
+        </form></td>
+    </tr>
+    <tr>
+        <td><b>Простая форма авторизации:</b>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Авторизуйтесь</legend>
+                <label for=“login”></label>
+                <INPUT required TYPE="text" ID="login" NAME="login" pattern="[A-Za-z0-9]">*Логин<br>
+                <label for=“password”></label>
+                <INPUT required TYPE="text" ID="password" NAME="password" pattern="(?!^[0-9]*$)(?!^[a-zA-Z]*$)^([a-zA-Z0-9]{8,15})">*Пароль<br>
+                <label><input type="checkbox" name="in_system" id="chbox3">оставаться в системе</label><br>
+                <input type="submit" value="Войти"><br>
+                <p><i>* - обязательное поле</i></p>
+
+        </form></td>
+        <td><b>Опрос(голосование):</b>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Как вам</legend>
+                <input type="hidden" name="date_voite" value="2013.12.31">
+                <label><input type="radio" name="radio" id="chboxr1">ничего</label><br>
+                <label><input type="radio" name="radio" id="chboxr2">неплохо</label><br>
+                <label><input type="radio" name="radio" id="chboxr3">хорошо</label><br>
+                <label><input type="radio" name="radio" id="chboxr4">супер</label><br>
+                <input type="submit" value="Отправить"><br>
+            </fieldset>
+        </form></td>
+    </tr>
+    <tr>
+        <td><b>Отзыв:</b>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Оставьте Ваш отзыв</legend>
+                <label for=“username”></label>
+                <INPUT required TYPE="text" ID="username" NAME="username" pattern="[A-Za-z0-9]$">*Имя<br>
+                <label for=“email”></label>
+                <INPUT required TYPE="email" ID="email" NAME="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">*e-mail<br>
+                <label><textarea id="textarea1" name="text" cols="30" rows="10" value="форма отправки">форма отправки</textarea></label><br>
+                <input type="submit" value="Отправить"><br>
+                <pre><i>* - обязательное поле поле email - с проверкой метод POST</i></pre>
+        </form></td>
+</table>   
+</body>
+</html>
