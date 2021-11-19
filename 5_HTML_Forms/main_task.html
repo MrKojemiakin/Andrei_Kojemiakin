@@ -98,6 +98,34 @@
             </form>
         </td>
     </tr>
+    <tr>
+        <td><b>Загрузка файла на сервер:</b>
+        <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post">
+            <fieldset>
+                <legend>Upload</legend>    
+                <input type="file" name="file_Field" dir=“ltr”>
+                <br>Срок хранения (года):<br>
+                <INPUT TYPE="text" ID="storage" NAME="storage" pattern="[0-9]">
+                <input type="submit" value="Загрузить">
+                <p>Метод POST
+                    В теге form используйте атрибут
+                    enctype="multipart/form-data" для отправки
+                    файла на сервер</p>
+            </fieldset>           
+        </form></td>
+        <td><b>Валидация данных HTML5:</b>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <input type="text" lang="ru" pattern="[А-Яа-яЁё]" required><br>Телефонный номер в формате 
+                +ХХХ-ХХ-ХХХХХХХ, где Х - любое числоы<br>
+                <label for="phone">
+                <input type="tel" id="phone" name="phone" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{7}" required>
+                <input type="submit" value="Проверить">
+                </label>
+            </fieldset>
+        </td>
+    </tr>
 </table>   
 </body>
 </html>
