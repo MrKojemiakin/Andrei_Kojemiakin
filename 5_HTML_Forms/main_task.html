@@ -66,14 +66,38 @@
         <form action="http://fe.it-academy.by/TestForm.php" method="post">
             <fieldset>
                 <legend>Оставьте Ваш отзыв</legend>
-                <label for=“username”></label>
-                <INPUT required TYPE="text" ID="username" NAME="username" pattern="[A-Za-z0-9]$">*Имя<br>
+                <label for=“login”></label>
+                <INPUT required TYPE="text" ID="username" NAME="username" pattern="[A-Za-z0-9]">*Имя<br>
                 <label for=“email”></label>
-                <INPUT required TYPE="email" ID="email" NAME="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">*e-mail<br>
-                <label><textarea id="textarea1" name="text" cols="30" rows="10" value="форма отправки">форма отправки</textarea></label><br>
+                <INPUT required TYPE="email" ID="email" NAME="email" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})">*e-mail<br>
+                <textarea name="text_area" lang=“ru”>Форма отправки</textarea>
                 <input type="submit" value="Отправить"><br>
-                <pre><i>* - обязательное поле поле email - с проверкой метод POST</i></pre>
+                <p><i>* - обязательное поле
+                    поле email - с проверкой 
+                    метод POST</i></p>
+            </fieldset>           
         </form></td>
+        <td><b>Выпадающий и мульти списки:</b>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset>
+                    <legend>Города РБ</legend>
+                    <select name="list" id="list">
+                        <optgroup label="Города РБ">
+                              <option value="1">Брест</option>
+                              <option value="2">Минск</option>
+                              <option value="3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                              <option value="4">Москва</option>
+                              <option value="5">Рязань</option>
+                              <option value="6">Магадан</option>
+                        </optgroup>
+                        <input type="submit" value="Ок">
+                    </select>
+                </fieldset>            
+            </form>
+        </td>
+    </tr>
 </table>   
 </body>
 </html>
