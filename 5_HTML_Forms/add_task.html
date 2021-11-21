@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+    <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="Surname" maxlength="25" value="Фамилия" patten="[А-Яа-яЁё]" required autofocus><br>
+        <input type="text" name="First_Name" maxlength="20" value="Имя" pattern="[А-Яа-яЁё]" required ><br>
+        <input type="text" name="Last_Name" maxlength="24" value="Отчество" pattern="[А-Яа-яЁё]" required><br>
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input type="text" name="serial" minlength="2" maxlength="2" pattern="[A-Z]{2}" required>
+            <input type="text" name="serial_number" minlength="7" maxlength="7" pattern="[0-9]{7}" required>
+        </fieldset>
+        <fieldset> 
+            <legend>Дата рождения</legend>
+                <input type="text" name="b_year" minlength="4" maxlength="4" pattern="[0-9]{4}"><br>
+                <select name="b_month">
+                    <option>Январь</option>
+                    <option>Февраль</option>
+                    <option>Март</option>
+                    <option>Апрель</option>
+                    <option>Май</option>
+                    <option>Июнь</option>
+                    <option>Июль</option>
+                    <option>Август</option>
+                    <option>Сентябрь</option>
+                    <option>Октябрь</option>
+                    <option>Ноябрь</option>
+                    <option>Декабрь</option>
+                </select>
+                <br>
+                <input type="range" name="b_date" min="1" max="31" step="1" oninput="this.nextElementSibling.value = this.value">
+                <output>15</output>
+        </fieldset>
+        <p>Национальность</p>
+        <select name="nationality" required>
+            <option>РБ</option>
+            <option>РФ</option>
+            <option>ЕС</option>
+            <option>США</option>
+            <option>Турист из Чукистана</option>
+        </select>
+        <p>Адрес</p>
+        <textarea rows="5" cols="30"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Хобби</legend>
+        <label for="Рыбалка">Рыбалка</label>
+        <input id="Рыбалка" type="checkbox" name="hobby[]"><br>
+        <label for="Астрономия">Астрономия</label>
+        <input id="Астрономия" type="checkbox" name="hobby[]"><br>
+        <label for="Дайвинг">Дайвинг</label>
+        <input id="Дайвинг" type="checkbox" name="hobby[]"><br>
+        <label for="Марки">Марки</label>
+        <input id="Марки" type="checkbox" name="hobby[]"><br>
+    </fieldset>
+</form>
+</body>
+</html>
