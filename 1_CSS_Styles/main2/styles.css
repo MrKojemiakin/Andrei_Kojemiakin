@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+address{
+    text-align: right;
+    font-style: italic
+}
+
+.adressat{
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+.adressat p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+.aa{
+    font-family: "Bad Script";
+    font-weight: 400;
+    text-indent: 25px;
+
+}
+h3{
+    font-family: "Bad Script";
+    text-decoration: underline;
+}
+h4{
+    text-align: right;
+    font-weight: bold;
+}
+.bb{
+    font-weight: 600;
+    text-shadow: 2px 2px 6px grey,
+}
