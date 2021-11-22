@@ -11,9 +11,9 @@
     <form action="http://fe.it-academy.by/TestForm.php" method="post">
     <fieldset>
         <legend>Личные данные</legend>
-        <input type="text" name="Surname" maxlength="25" value="Фамилия" patten="[А-Яа-яЁё]" required autofocus><br>
-        <input type="text" name="First_Name" maxlength="20" value="Имя" pattern="[А-Яа-яЁё]" required ><br>
-        <input type="text" name="Last_Name" maxlength="24" value="Отчество" pattern="[А-Яа-яЁё]" required><br>
+        <input type="text" name="Surname" maxlength="25" placeholder="Фамилия" patten="[А-Яа-яЁё]" required autofocus><br>
+        <input type="text" name="First_Name" maxlength="20" placeholder="Имя" pattern="[А-Яа-яЁё]" required ><br>
+        <input type="text" name="Last_Name" maxlength="24" placeholder="Отчество" pattern="[А-Яа-яЁё]" required><br>
         <fieldset>
             <legend>Паспортные данные</legend>
             <input type="text" name="serial" minlength="2" maxlength="2" pattern="[A-Z]{2}" required>
@@ -21,7 +21,7 @@
         </fieldset>
         <fieldset> 
             <legend>Дата рождения</legend>
-                <input type="text" name="b_year" minlength="4" maxlength="4" pattern="[0-9]{4}"><br>
+                <input type="text" name="b_year" minlength="4" maxlength="4" placeholder="год рождения" pattern="[0-9]{4}"><br>
                 <select name="b_month">
                     <option>Январь</option>
                     <option>Февраль</option>
@@ -62,6 +62,48 @@
         <label for="Марки">Марки</label>
         <input id="Марки" type="checkbox" name="hobby[]"><br>
     </fieldset>
+    <legend>Домашние животные</legend>
+    <select name="Pets" >
+    <optgroup label="Попугаи">
+        <option value="Волнистый">Волнистый</option>
+        <option value="Ара">Ара</option>
+        <option value="Неразлучник">Неразлучник</option>
+    </optgroup>
+    <optgroup label="Рыба">
+        <option value="Караси">Караси</option>
+        <option value="Окуни">Окуни</option>
+        <option value="Осетр">Осетр</option>
+    </optgroup>
+    <optgroup label="Птицы">
+        <option value="Стая ворон">Стая ворон</option>
+        <option value="Аист">Аист</option>
+        <option value="Археоптерикс">Археоптерикс</option>
+    </optgroup></select>
+</fieldset>
+<fieldset>
+    <legend>Данные для входа и восстановления пароля</legend>
+        <input type="text" name="login" placeholder="Логин" minlength="5" width="20" pattern="[A-Za-z]" required><br>
+        <input type="text" name="pwd" placeholder="пароль" minlength="10" width="20" pattern="[A-Za-z]" required autocomplete="off">  
+    
+</fieldset>
+<fieldset>
+    <legend>Координаты</legend>
+        <input type="email" placeholder="введите адрес почты" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+        <input type="url" placeholder="введите адрес сайта">   
+</fieldset>
+<fieldset>
+    <legend>Цифры</legend>
+    <input type="number" min="-2.5" max="2.5" step="0.1">
+    <input type="range" min="1" max="10">
+</fieldset>
+<Fieldset>
+    <legend>Кнопки управления</legend>
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сбросить">
+    <button disabled>
+        <img src="загрузка.jpg" alt="">
+    </button>
+</Fieldset>
 </form>
 </body>
 </html>
