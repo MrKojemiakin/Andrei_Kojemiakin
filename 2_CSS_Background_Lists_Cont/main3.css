@@ -1,0 +1,18 @@
+.nav{
+    background-color: indianred;
+    width: 15em;
+    position: left;
+    float: left;
+}
+.costyl{
+    margin: 0px;
+    padding:0px;
+    height: 2px;
+}
+
+.article{
+    position: right;
+    background-color: #43dd24;
+    margin-bottom: 2em;
+
+}
