@@ -2,7 +2,20 @@ div{
     background-color: black;
     color: green;
     width: 400px;
+    display: grid;
     grid-auto-flow: dense;
     grid-template-rows: repeat(4; 1fr);
-    
+}
+
+p{
+    margin-top: 0.5px;
+    margin-bottom: 0.5px;
+}
+
+ul{
+    width: 350px;
+    list-style-type: upper-roman;
+}
+.inside{
+    list-style-type: lower-roman;
 }
