@@ -4,15 +4,30 @@
     position: left;
     float: left;
 }
-.costyl{
-    margin: 0px;
-    padding:0px;
-    height: 2px;
+.costyl div{
+    clear: both;
+    height: 3px;
+    background-color: black;
 }
 
 .article{
+    position: relative;
     position: right;
     background-color: #43dd24;
     margin-bottom: 2em;
+    margin-left: 15em;
+
+}
+.footer{
+    height: auto;
+    background-color: aqua;
+    margin-top: 0px;
+}
+
+img p{
+    float: right;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
 
 }
