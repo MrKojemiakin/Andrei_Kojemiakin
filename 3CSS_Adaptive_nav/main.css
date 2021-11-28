@@ -5,13 +5,15 @@
 }
 html,body{
     height: 100%;
-    background-color: rgb(104, 102, 99);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
 
 .menu a{
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
 }
 .menu li{
@@ -20,15 +22,23 @@ html,body{
     border-width: 2px;
 }
 .menu_list{
+    background-color: lightslategrey;
     display: flex;
+    justify-content: center;
+    border-style: solid;
+}
+.menu_list>li a:hover{
+    background-color: rgb(196, 84, 84);
+    box-shadow:1px 5px 15px -5px indigo;
+    transition: all 0.5s ease;
 }
 .menu_list>li{
     margin: 0px 10px 0px 0px;
 }
-.menu_list>li:hover .submenu_list{display: block;}
+.menu_list>li:hover .submenu_list{display: block;transition: all 0.5s ease;}
 
 .menu_link{
-    color: chocolate;
+    color: rgb(0, 0, 0);
 }
 .submenu_list{
     display: none;
@@ -41,6 +51,8 @@ html,body{
 .submenu_link{
     color: black;
     display: inline-block;
+    background-color: dimgray;
+    border: solid;
 }
 @media all and (max-width:670px){
     html,body{
